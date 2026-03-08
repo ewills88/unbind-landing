@@ -312,10 +312,16 @@
         /* ── CTA Box ── */
         .cta-box {
             margin-top: 44px;
-            background: linear-gradient(135deg, var(--blue-mid), var(--blue-deep));
+            background: var(--navy);
             border-radius: 14px;
             padding: 40px 36px;
             text-align: center;
+            position: relative; overflow: hidden;
+        }
+        .cta-box::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(ellipse at center top, rgba(93,200,228,0.1) 0%, transparent 55%);
+            pointer-events: none;
         }
 
         .cta-box h2 {
@@ -335,19 +341,21 @@
         .cta-btn {
             display: inline-block;
             padding: 14px 36px;
-            background: var(--white);
-            color: var(--blue-deep);
+            background: linear-gradient(135deg, var(--blue-light), var(--blue-mid));
+            color: var(--white);
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
             font-size: 1rem;
             border-radius: 10px;
             text-decoration: none;
+            box-shadow: 0 2px 16px rgba(93,200,228,0.3);
             transition: transform 0.2s, box-shadow 0.2s;
+            position: relative; z-index: 1;
         }
 
         .cta-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 24px rgba(93,200,228,0.45);
         }
 
         /* ── Footer ── */
