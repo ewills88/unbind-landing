@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Insights for Divorce Attorneys | Unbind</title>
+<meta name="description" content="Expert insights on divorce practice management, legal technology, and running a more efficient family law practice. From the team at Unbind.">
+<link rel="canonical" href="https://unbind.law/blog/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://unbind.law/blog/">
+<meta property="og:title" content="Blog — Insights for Divorce Attorneys | Unbind">
+<meta property="og:description" content="Expert insights on divorce practice management, legal technology, and running a more efficient family law practice.">
+<meta property="og:site_name" content="Unbind">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog — Insights for Divorce Attorneys | Unbind">
+<meta name="twitter:description" content="Expert insights on divorce practice management, legal technology, and running a more efficient family law practice.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --blue-light: #5DC8E4;
+  --blue-mid: #3AADCF;
+  --blue-deep: #1E6B9A;
+  --blue-dim: rgba(58,173,207,0.08);
+  --gold: #D4A84B;
+  --gold-soft: #B8944D;
+  --navy: #1A2D50;
+  --text: #2E3A4D;
+  --text-light: #5A6A80;
+  --text-faint: #8A96A8;
+  --cream: #FAFAF7;
+  --white: #FFFFFF;
+  --border: rgba(26,45,80,0.08);
+  --border-strong: rgba(26,45,80,0.13);
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--cream); color: var(--text); line-height: 1.6; }
+.container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+/* ─────────── NAV ─────────── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 14px 0;
+  background: rgba(250,250,247,0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+nav .container { display: flex; align-items: center; justify-content: space-between; }
+.nav-logo {
+  font-family: var(--font-display); font-size: 1.4rem; font-weight: 700;
+  color: var(--navy); text-decoration: none;
+}
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a {
+  color: var(--text-light); text-decoration: none; font-size: 0.9rem;
+  font-weight: 500; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--navy); }
+
+/* ─────────── BUTTONS ─────────── */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 28px;
+  font-family: var(--font-body); font-size: 0.9rem; font-weight: 600;
+  border-radius: 10px; text-decoration: none; cursor: pointer; border: none;
+  transition: all 0.25s ease;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--blue-mid), var(--blue-deep));
+  color: var(--white);
+  box-shadow: 0 2px 14px rgba(30,107,154,0.25);
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--blue-deep), #165980);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 22px rgba(30,107,154,0.35);
+}
+
+/* ─────────── SHARED ─────────── */
+.eyebrow {
+  font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--blue-mid); font-weight: 600; margin-bottom: 14px;
+}
+.sh2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 600; color: var(--navy);
+  line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 16px;
+}
+.section-header { text-align: center; max-width: 640px; margin: 0 auto 64px; }
+
+/* ─────────── BLOG INDEX ─────────── */
+.blog-hero {
+  padding: 140px 0 60px;
+  background: linear-gradient(180deg, var(--white) 0%, var(--cream) 100%);
+  text-align: center;
+}
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; padding-bottom: 100px; }
+.blog-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 16px; padding: 32px 28px;
+  transition: all 0.3s ease; text-decoration: none; display: flex;
+  flex-direction: column;
+}
+.blog-card:hover {
+  border-color: rgba(58,173,207,0.2);
+  box-shadow: 0 4px 24px rgba(30,107,154,0.06);
+  transform: translateY(-2px);
+}
+.blog-tag {
+  display: inline-block; padding: 4px 12px;
+  background: var(--blue-dim); border-radius: 100px;
+  font-size: 0.75rem; font-weight: 600; color: var(--blue-deep);
+  text-transform: uppercase; letter-spacing: 0.06em;
+  margin-bottom: 16px; width: fit-content;
+}
+.blog-card h3 {
+  font-family: var(--font-display); font-size: 1.12rem; font-weight: 600;
+  color: var(--navy); margin-bottom: 12px; line-height: 1.35;
+}
+.blog-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; flex: 1; }
+.blog-card-footer {
+  margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border);
+  font-size: 0.82rem; color: var(--text-faint);
+}
+
+/* ─────────── FOOTER ─────────── */
+footer { padding: 44px 0; border-top: 1px solid var(--border); background: var(--cream); }
+footer .container {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 16px;
+}
+.f-brand { display: flex; align-items: center; gap: 10px; }
+.f-tag { font-size: 0.82rem; color: var(--gold-soft); font-style: italic; margin-top: 3px; }
+.f-links { display: flex; gap: 24px; }
+.f-links a { font-size: 0.82rem; color: var(--text-faint); text-decoration: none; }
+.f-links a:hover { color: var(--blue-deep); }
+
+@media (max-width: 768px) {
+  .nav-links a:not(.btn) { display: none; }
+  .blog-grid { grid-template-columns: 1fr; }
+  footer .container { flex-direction: column; text-align: center; }
+  .f-links { justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- ─────────── NAV ─────────── -->
+<nav>
+  <div class="container">
+    <a href="/" class="nav-logo">Unbind</a>
+    <div class="nav-links">
+      <a href="/blog/">Blog</a>
+      <a href="https://cal.com/eric-wills-snawfe/15min" target="_blank" class="btn btn-primary">Book a Demo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ─────────── BLOG HERO ─────────── -->
+<section class="blog-hero">
+  <div class="container">
+    <div class="eyebrow">Resources</div>
+    <h1 class="sh2">Insights for divorce attorneys</h1>
+  </div>
+</section>
+
+<!-- ─────────── BLOG GRID ─────────── -->
+<section>
+  <div class="container">
+    <div class="blog-grid">
+      <a href="/blog/clio-vs-unbind-comparison.html" class="blog-card">
+        <span class="blog-tag">Software Comparison</span>
+        <h3>Clio vs. Unbind: Which Practice Management Tool is Right for Divorce Attorneys?</h3>
+        <p>A detailed comparison of general-purpose practice management vs. divorce-specific tools. Features, pricing, and which one saves you more time.</p>
+        <div class="blog-card-footer">12 min read</div>
+      </a>
+      <a href="/blog/divorce-attorney-admin-time.html" class="blog-card">
+        <span class="blog-tag">Practice Management</span>
+        <h3>How Much Time Do Divorce Attorneys Actually Spend on Admin?</h3>
+        <p>The data shows family law attorneys spend 20+ hours per week on non-billable administrative work. Here&rsquo;s where the time goes and how to get it back.</p>
+        <div class="blog-card-footer">8 min read</div>
+      </a>
+      <a href="/blog/why-specialized-practice-management.html" class="blog-card">
+        <span class="blog-tag">Industry Insights</span>
+        <h3>Why Divorce Attorneys Need Specialized Practice Management Software</h3>
+        <p>Generic tools force you to adapt your workflow to the software. Here&rsquo;s why purpose-built tools for family law deliver dramatically better results.</p>
+        <div class="blog-card-footer">10 min read</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── FOOTER ─────────── -->
+<footer>
+  <div class="container">
+    <div class="f-info">
+      <div class="nav-logo" style="font-size:1.1rem;">Unbind</div>
+      <div class="f-tag">Divorce. Together.</div>
+    </div>
+    <div class="f-links">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#cta">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
