@@ -162,6 +162,7 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 .nav-links { display: flex; align-items: center; gap: 32px; }
 .nav-links a { color: var(--text-light); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
 .nav-links a:hover { color: var(--navy); }
+.nav-signin:hover { text-decoration: underline !important; }
 nav .btn-primary {
   background: linear-gradient(135deg, var(--blue-deep), #165980);
   color: var(--white);
@@ -672,10 +673,9 @@ footer .container {
 
 /* ─────────── RESPONSIVE ─────────── */
 @media (max-width: 768px) {
-  .nav-links a:not(.btn):not(.signin-mobile) { display: none; }
-  .signin-mobile { display: inline-block !important; }
-  .signin-desktop { display: none !important; }
+  .nav-links a:not(.btn):not(.nav-signin) { display: none; }
   .hero-signin-mobile { display: block !important; }
+  .hero-desktop-only { display: none !important; }
   .hero { padding: 130px 0 80px; }
   .hero-proof { flex-wrap: wrap; gap: 16px; }
   .stat-div { display: none; }
@@ -703,8 +703,7 @@ footer .container {
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
       <a href="/blog/">Blog</a>
-      <a href="https://app.unbind.law/login" style="color:#999;text-decoration:none;font-size:0.9rem;margin-right:16px" class="signin-desktop">Sign In</a>
-      <a href="https://app.unbind.law/login" class="signin-mobile" style="display:none;padding:6px 16px;background:#f5a623;color:#0a0f1e;border-radius:100px;font-size:0.8rem;font-weight:700;text-decoration:none;margin-left:auto">Sign In</a>
+      <a href="https://app.unbind.law/login" class="nav-signin" style="color:#0a0f1e;text-decoration:none;font-size:0.9rem;font-weight:500;margin-right:12px">Sign In</a>
       <a href="https://buy.stripe.com/14AcN57TyfScdzxcOL2wU0c" class="btn btn-primary">Start Free Trial</a>
     </div>
   </div>
@@ -721,7 +720,7 @@ footer .container {
       <a href="#features" class="btn btn-outline">See How It Works</a>
     </div>
     <a href="https://app.unbind.law/login" class="hero-signin-mobile" style="display:none;margin-top:12px;padding:12px 24px;border:1px solid #f5a623;border-radius:8px;color:#f5a623;text-decoration:none;font-weight:600;font-size:0.95rem;text-align:center;width:100%;max-width:360px">Already have an account? Sign In &rarr;</a>
-    <p style="margin-top:12px;font-size:0.85rem;color:#888" class="signin-desktop">Already have an account? <a href="https://app.unbind.law/login" style="color:#ccc;text-decoration:underline">Sign in &rarr;</a></p>
+    <p style="margin-top:12px;font-size:0.85rem;color:#888" class="hero-desktop-only">Already have an account? <a href="https://app.unbind.law/login" style="color:#ccc;text-decoration:underline">Sign in &rarr;</a></p>
     <div class="hero-proof">
       <div class="hero-stat"><strong>15+ hrs</strong><span>Saved per week</span></div>
       <div class="stat-div"></div>
