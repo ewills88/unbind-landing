@@ -949,6 +949,10 @@ footer .container {
 </section>
 
 <!-- ═══════════ PRICING ═══════════ -->
+<!--
+  STRIPE_BETA = "https://buy.stripe.com/14AcN57TyfScdzxcOL2wU0c"
+  STRIPE_PRO  = "https://buy.stripe.com/7sY14nddSbBWeDB9Cz2wU0d"
+-->
 <section class="pricing" id="pricing">
   <div class="container">
     <div class="section-header">
@@ -957,40 +961,54 @@ footer .container {
       <p class="section-sub">Pays for itself with less than one saved billable hour per month.</p>
     </div>
     <div class="pc-wrap">
+
+      <!-- Standard Card -->
       <div class="pc">
-        <h3>Professional</h3>
-        <p class="pdesc">Full platform after beta</p>
+        <h3>Standard</h3>
+        <p class="pdesc">Full access, cancel anytime</p>
         <div class="pamt"><span class="dollar">$179</span><span class="per">/mo per attorney</span></div>
-        <p class="pnote">14-day free trial</p>
+        <p class="pnote" style="margin-bottom:24px">14-day free trial</p>
         <ul class="pf">
-          <li><span class="ck">&#10003;</span>AI document intelligence</li>
-          <li><span class="ck">&#10003;</span>Full client portal &amp; PWA app</li>
-          <li><span class="ck">&#10003;</span>Settlement &amp; discovery tools</li>
-          <li><span class="ck">&#10003;</span>Billing, invoicing &amp; payments</li>
-          <li><span class="ck">&#10003;</span>State-specific templates</li>
-          <li><span class="ck">&#10003;</span>Unlimited cases &amp; storage</li>
-          <li><span class="ck">&#10003;</span>Workflow automation</li>
+          <li><span class="ck">&#10003;</span>AI document categorization</li>
+          <li><span class="ck">&#10003;</span>Full client portal (included)</li>
+          <li><span class="ck">&#10003;</span>Smart case management</li>
+          <li><span class="ck">&#10003;</span>15-state deadline tracking</li>
+          <li><span class="ck">&#10003;</span>One-click billing and payments</li>
+          <li><span class="ck">&#10003;</span>Discovery tracking</li>
+          <li><span class="ck">&#10003;</span>Settlement tools</li>
+          <li><span class="ck">&#10003;</span>Trust accounting (IOLTA compliant)</li>
+          <li><span class="ck">&#10003;</span>Priority support</li>
         </ul>
-        <a href="https://buy.stripe.com/14AcN57TyfScdzxcOL2wU0c" class="btn btn-outline">Start Free Trial</a>
+        <a href="https://buy.stripe.com/7sY14nddSbBWeDB9Cz2wU0d" class="btn btn-outline">Start Free Trial</a>
+        <p style="margin-top:8px;font-size:0.8rem;color:#888">Already have an account? <a href="https://app.unbind.law/login" style="color:#ccc;text-decoration:underline">Sign in &rarr;</a></p>
       </div>
-      <div class="pc feat">
-        <div class="pc-badge">Limited Beta &mdash; 50% Off Forever</div>
+
+      <!-- Beta Card (featured) -->
+      <div class="pc feat" style="border-color:#f5a623;box-shadow:0 4px 40px rgba(245,166,35,0.15);background:linear-gradient(170deg,rgba(245,166,35,0.06) 0%,var(--white) 100%)">
+        <div class="pc-badge" style="background:linear-gradient(135deg,#f5a623,#d4880a)">Most Popular &mdash; Limited Beta</div>
         <h3>Beta Access</h3>
         <p class="pdesc">Lock in this price for life</p>
         <div class="pamt"><span class="dollar">$89</span><span class="per">/mo per attorney</span></div>
         <p class="pstrike">$179/mo after beta closes</p>
         <ul class="pf">
-          <li><span class="ck">&#10003;</span>Everything in Professional</li>
-          <li><span class="ck">&#10003;</span>Lifetime price lock</li>
-          <li><span class="ck">&#10003;</span>Priority support</li>
-          <li><span class="ck">&#10003;</span>Direct access to product team</li>
-          <li><span class="ck">&#10003;</span>Shape the product roadmap</li>
-          <li><span class="ck">&#10003;</span>Free data migration</li>
-          <li><span class="ck">&#10003;</span>14-day free trial included</li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span>AI document categorization</li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span>Full client portal (included)</li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span>Smart case management</li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span>15-state deadline tracking</li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span>One-click billing and payments</li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span>Discovery tracking</li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span>Settlement tools</li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span>Trust accounting (IOLTA compliant)</li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span>Priority support</li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span><strong>Lifetime price lock</strong></li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span><strong>Direct access to product team</strong></li>
+          <li><span class="ck" style="color:#f5a623">&#10003;</span><strong>Free data migration</strong></li>
         </ul>
-        <a href="https://buy.stripe.com/14AcN57TyfScdzxcOL2wU0c" class="btn btn-primary">Claim Beta Spot &rarr;</a>
-        <p style="margin-top:8px;font-size:0.8rem;color:#888">Already have an account? <a href="https://app.unbind.law/login" style="color:#ccc;text-decoration:underline">Sign in &rarr;</a></p>
+        <a href="https://buy.stripe.com/14AcN57TyfScdzxcOL2wU0c" class="btn btn-primary" style="background:#f5a623;border-color:#f5a623;color:#0a0f1e">Claim Beta Spot &rarr;</a>
+        <p style="margin-top:10px;font-size:0.8rem;color:#888">Already have an account? <a href="https://app.unbind.law/login" style="color:#ccc;text-decoration:underline">Sign in &rarr;</a></p>
+        <p style="margin-top:16px;font-size:0.8rem;color:#b07810;font-weight:600;text-align:center">Beta pricing closes at 50 members.<br>A limited number of spots remaining.</p>
       </div>
+
     </div>
   </div>
 </section>
